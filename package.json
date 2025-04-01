@@ -1,0 +1,52 @@
+{
+  "name": "hcg-blog-generator",
+  "version": "0.1.0",
+  "description": "Static site generator for blogs, optimized for serverless environments.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "hcg": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "watch": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "echo \"Linter not configured yet\""
+  },
+  "keywords": [
+    "static site generator",
+    "ssg",
+    "blog",
+    "markdown",
+    "node",
+    "typescript",
+    "aws lambda",
+    "azure functions"
+  ],
+  "author": "Hareesh CG",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.3",
+    "gray-matter": "^4.0.3",
+    "marked": "^15.0.7",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "@types/marked": "^6.0.0",
+    "@types/node": "^18.0.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hareesh-cg/hcg-blog-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hareesh-cg/hcg-blog-generator/issues"
+  },
+  "homepage": "https://github.com/hareesh-cg/hcg-blog-generator#readme"
+}
