@@ -1,0 +1,8 @@
+{
+    "title": "My Test Site",
+    "baseUrl": "https://mytest.dev",
+    "description": "A site for testing HcgBlogGenerator",
+    "paths": {
+      "output": "public"      
+    }
+  }
